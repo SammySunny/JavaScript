@@ -1,0 +1,51 @@
+[
+    {
+        "id":1,
+        "nombre": "Mabel y Pato",
+        "precio": 2500,
+        "img": "./imagenes/mabel.jpg"
+    },
+    {
+        "id":2,
+        "nombre": "Sally",
+        "precio": 1500,
+        "img": "./imagenes/sally.jpg"
+    },
+    {
+        "id":3,
+        "nombre": "Jack y Zero",
+        "precio": 2300,
+        "img": "./imagenes/jackzero.jpg"
+    },
+    {
+        "id":4,
+        "nombre": "Dr. Strange",
+        "precio": 1500,
+        "img": "./imagenes/drstrange.jpg"
+    },
+    {
+        "id":5,
+        "nombre": "Gato con Botas",
+        "precio": 1800,
+        "img": "./imagenes/gatoconbotas.jpg"
+    },
+    {
+        "id":6,
+        "nombre": "Batman",
+        "precio": 1500,
+        "img": "./imagenes/batman.jpg"
+    },
+    {
+        "id":7,
+        "nombre": "Copa Mundial",
+        "precio": 900,
+        "img": "./imagenes/copa.jpg"
+    },
+    {
+        "id":8,
+        "nombre": "Coraline",
+        "precio": 2000,
+        "img": "./imagenes/coraline.jpg"
+    }
+]
+

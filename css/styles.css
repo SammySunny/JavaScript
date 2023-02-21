@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+
+.navbarcolor{
+    display: flex;
+    flex-direction: row;
+    background-color: aquamarine;
+}
+
+.navbarcolor a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.navbarcolor h1{
+    display: flex;
+    font-size: 3rem;
+    color: rgb(3, 64, 47);
+    -webkit-text-stroke: 0.1vw rgb(57, 172, 147);
+    text-shadow: 8vw 8vw 8vw rgb(136, 85, 199), 0 0 1rem rgb(145, 68, 190), 0 0 0.2rem rgb(19, 149, 236);
+}
+
+.pandita img{
+    border-radius: 0.7rem;
+}
+
+.color__titulo{
+    color: rgb(2, 2, 15);
+}
+
+
+/* Carrito dentro del navbar */
+
+#boton-carrito {
+    border: none;
+    color: rgb(8, 113, 84);
+    font-size: 2.5rem;
+    background-color: white;
+    border-radius: 25%;
+    padding: 0.6rem 0.12rem;
+    margin-right: 6rem;
+    transition: all .3s;
+}
+#boton-carrito:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(8, 113, 84);
+}
+#boton-carrito:focus {
+    outline: none;
+}
+
+/* Cuerpo del html */
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(155, 248, 226, 0.57);
+    width: 100%;
+}
+
+#contenedor-productos {
+    width: 80%;
+    margin: 3.5rem auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+img {
+    width: 100%;
+    margin-bottom: 0.6rem;
+}
+
+p {
+    line-height: 1.8rem;
+}
+.producto {
+    max-width: 20%;
+    padding: 0.6rem;
+    margin: 0.6rem;
+    margin-bottom: 1.2rem;
+    box-shadow: 0.12rem 0.36rem 0.18rem 0.18rem rgba(0, 0, 0, 0.3);
+}
+.precioProducto {
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.boton-agregar {
+    background-color: rgba(155, 248, 226, 0.57);
+    color: rgb(8, 113, 84);
+    font-size: 1.08rem;
+    font-weight: 700;
+    padding: 0.3rem;
+    border-style: solid;
+    
+}
+.boton-agregar:hover {
+    cursor: pointer;
+}
+.boton-agregar:focus {
+    outline: none;
+}
+main{
+    display: flex;
+}
+
+
+/* Buscador */
+
+.filtro{
+    display: none;
+}
+
+
+/* Diseño para clases modal del carrito */
+
+.modal-contenedor {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-carrito {
+    position: relative;
+    background-color: white;
+    min-width: 30rem;
+    padding: 1.2rem;
+    transition: all .5s;
+}
+
+
+
+.modal-active .modal-carrito {
+    margin-top: 0;
+}
+
+.modal-carrito h3 {
+    color: rgb(27, 174, 140);
+    padding-bottom: 5px;
+}
+.modal-carrito #carritoCerrar {
+    position: absolute;
+    top: 0.9rem;
+    right: 0.9rem;
+    font-size: 1.2rem;
+    color: rgb(27, 174, 140);
+    border: none;
+    background-color: white;
+}
+.modal-carrito #carritoCerrar:hover {
+    cursor: pointer;
+}
+.modal-carrito #carritoCerrar:focus {
+    outline: none;
+}
+.modal-carrito .precioProducto {
+    padding-top: 0.6rem;
+    
+}
+
+.productoEnCarrito {
+    border-left: 0.3rem solid lightblue;
+    border-bottom-left-radius: 0.18rem;
+    border-top-left-radius: 0.18rem;
+    margin: 0.3rem 0;
+    padding: 0.3rem 0.6rem;
+    display: flex;
+    justify-content: space-between;
+}
+.productoEnCarrito:hover {
+    border-left: 0.3rem solid rgb(27, 174, 140);
+}
+
+.boton-eliminar {
+    background-color: white;
+    color: red;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.boton-eliminar:hover {
+    cursor: pointer;
+}
+.boton-eliminar:focus {
+    outline: none;
+}
+
+/* Footer */
+
+.foot {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(155, 248, 226, 0.57);
+    border-style: solid;
+    border-color: white;
+    justify-content: space-between;
+}
+.foot__p {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-self: center;
+    font-size: 1.5rem;
+    padding: 1vw;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+}
+.logos__li {
+    padding: 1vw;
+}
+.logos__img {
+    width: 2.5vw;
+}
